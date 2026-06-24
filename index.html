@@ -277,18 +277,25 @@ body{font-family:'Montserrat',sans-serif;background:#F4F7FB;color:#222}
     <div class="nav-section">Umum</div>
     <a class="nav-item active" onclick="showPage('cover',this)">🏠 Beranda</a>
     <a class="nav-item" onclick="showPage('overview',this)">📋 Executive Summary</a>
+    <a class="nav-item" onclick="showPage('login',this)">🔐 Cara Login</a>
+    <a class="nav-item" onclick="showPage('mainpage',this)">🖥️ Main Page Sistem</a>
     <div class="nav-section">Onboarding</div>
     <a class="nav-item" onclick="showPage('preonboard',this)">👤 Pre-onboarding</a>
-    <a class="nav-item sub" onclick="showPage('tutorial',this)">↳ 📖 Tutorial Step-by-Step</a>
+    <a class="nav-item sub" onclick="showPage('tutorial',this)">↳ 📖 Tutorial: New Hire Request</a>
     <div class="nav-section">Career Transition</div>
     <a class="nav-item" onclick="showPage('contract',this)">📄 Perpanjangan Kontrak</a>
+    <a class="nav-item sub" onclick="showPage('tut-contract',this)">↳ 📖 Tutorial: Career Transition</a>
     <a class="nav-item" onclick="showPage('rotation',this)">🔄 Rotasi Personel</a>
     <div class="nav-section">Offboarding</div>
     <a class="nav-item" onclick="showPage('resign',this)">🚪 Resign</a>
     <a class="nav-item" onclick="showPage('eoc',this)">📅 End of Contract</a>
     <a class="nav-item" onclick="showPage('deceased',this)">🕊️ Meninggal Dunia</a>
+    <div class="nav-section">Menu Lainnya</div>
+    <a class="nav-item" onclick="showPage('menu-career',this)">📁 Career Administration</a>
+    <a class="nav-item" onclick="showPage('menu-attendance',this)">🕐 Time &amp; Attendance</a>
+    <a class="nav-item" onclick="showPage('menu-reports',this)">📊 Reports &amp; Upload</a>
   </div>
-  <div class="sidebar-footer">Update: April 2026 · PeopleVerse v7.0</div>
+  <div class="sidebar-footer">Update: April 2026 · Sunfish 7.0<br><span style="color:var(--pv-teal)">Untuk: PIC 3rd Party &amp; HRBP DC</span></div>
 </nav>
 
 <main class="gb-main">
@@ -298,7 +305,7 @@ body{font-family:'Montserrat',sans-serif;background:#F4F7FB;color:#222}
   <div class="cover-banner">
     <div class="cover-badge">OFFICIAL GUIDEBOOK · 2026</div>
     <div class="cover-title">Third Party<br><span>Data Management</span></div>
-    <div class="cover-sub">Panduan resmi pengelolaan data personel Third Party di sistem PeopleVerse — untuk PIC 3rd Party dan HRBP DC.</div>
+    <div class="cover-sub">Panduan resmi pengelolaan data personel Third Party di sistem PeopleVerse — disusun khusus untuk <strong style="color:var(--pv-teal)">PIC 3rd Party</strong> dan <strong style="color:var(--pv-teal)">HRBP DC</strong>.</div>
     <div class="cover-meta">
       <div class="cover-meta-item"><strong>Target User</strong>PIC 3rd Party · HRBP DC</div>
       <div class="cover-meta-item"><strong>Sistem</strong>PeopleVerse (Sunfish 7.0)</div>
@@ -351,6 +358,20 @@ body{font-family:'Montserrat',sans-serif;background:#F4F7FB;color:#222}
     </tbody>
   </table>
   <div class="highlight-box warn-box" style="margin-top:20px"><div class="hb-title">⚠️ Penting Diperhatikan</div><div class="hb-body">Setiap proses memiliki <strong>deadline input data</strong> di sistem PeopleVerse. Keterlambatan input akan berdampak pada proses payroll dan employment status personel.</div></div>
+
+  <div class="flow-title" style="margin-top:24px">Cut-off Date Input Data per 3rd Party</div>
+  <table class="info-table">
+    <thead><tr><th>3rd Party</th><th>Payroll Cycle</th><th>Employment Status Change</th><th>Resign / Offboarding</th></tr></thead>
+    <tbody>
+      <tr><td>Absolut Servis Nusantara</td><td>1 – 30/31</td><td><span class="badge badge-blue">Tgl 1</span></td><td><span class="badge badge-orange">As requested</span></td></tr>
+      <tr><td>Absolute Services</td><td>1 – 30/31</td><td><span class="badge badge-blue">Tgl 1</span></td><td><span class="badge badge-orange">As requested</span></td></tr>
+      <tr><td>ISS</td><td>1 – 30/31</td><td><span class="badge badge-blue">Tgl 1</span></td><td><span class="badge badge-orange">As requested</span></td></tr>
+      <tr><td>Calroweila</td><td>16 – 15</td><td><span class="badge badge-teal">Tgl 16</span></td><td><span class="badge badge-orange">As requested</span></td></tr>
+      <tr><td>Elabram</td><td>16 – 15</td><td><span class="badge badge-teal">Tgl 16</span></td><td><span class="badge badge-orange">As requested</span></td></tr>
+      <tr><td>TCID</td><td>16 – 15</td><td><span class="badge badge-teal">Tgl 16</span></td><td><span class="badge badge-orange">As requested</span></td></tr>
+      <tr><td>KAN</td><td>16 – 15</td><td><span class="badge badge-teal">Tgl 16</span></td><td><span class="badge badge-orange">As requested</span></td></tr>
+    </tbody>
+  </table>
 </div>
 
 <!-- ===== PRE-ONBOARDING (FLOW) ===== -->
@@ -398,7 +419,7 @@ body{font-family:'Montserrat',sans-serif;background:#F4F7FB;color:#222}
     <div class="gr-title">⚠️ Aturan Global — Berlaku untuk SEMUA Field</div>
     <div class="gr-item">Semua data wajib menggunakan <strong>HURUF KAPITAL</strong> mulai dari pre-onboarding hingga offboarding</div>
     <div class="gr-item">Sistem hanya bisa diakses via browser <strong>Chrome, Mozilla, atau Edge</strong></div>
-    <div class="gr-item">Validasi Position & Work Location mengacu ke <strong>tinyurl.com/SUNFISHSUPPORT-3RDPARTY</strong></div>
+    <div class="gr-item">Validasi Position & Work Location mengacu ke <strong>https://tinyurl.com/SUNFISHSUPPORT-3RDPARTY</strong></div>
   </div>
 
   <div class="tut-intro">
@@ -419,9 +440,9 @@ body{font-family:'Montserrat',sans-serif;background:#F4F7FB;color:#222}
   <!-- STEP 1 -->
   <div class="step-panel s-active" id="sp-0">
     <div class="step-header-tut"><div class="step-num-tut">1</div><div><div class="step-title-tut">Buka menu Employee Information</div><div class="step-sub-tut">Klik ikon Employee di sidebar kiri → pilih Employee Information</div></div></div>
-    <div class="action-box"><div class="action-icon-tut">👤</div><div><div class="action-label">Yang harus dilakukan</div><div class="action-desc">Login ke PeopleVerse, klik ikon <strong>Employee</strong> di sidebar kiri, lalu pilih <strong>Employee Information</strong>.</div><div class="action-path">Employee <span>›</span> Employee Information</div></div></div>
+    <div class="action-box"><div class="action-icon-tut">👤</div><div><div class="action-label">Yang harus dilakukan</div><div class="action-desc">Login ke PeopleVerse, klik ikon <strong>Employee</strong> di sidebar kiri, lalu pilih <strong>Employee Information</strong>.</div><div class="action-path">Employee <span>›</span> Employee Information <span>›</span> New Hire Request</div></div></div>
     <div class="ui-mockup">
-      <div class="ui-topbar"><div class="ui-topbar-logo">PeopleVerse</div><div class="ui-topbar-url">https://id.sunfishhr.com</div></div>
+      <div class="ui-topbar"><div class="ui-topbar-logo">PeopleVerse</div><div class="ui-topbar-url">https://sf7.sunfishhr.com/standard/home</div></div>
       <div class="ui-body-tut">
         <div class="ui-sidebar-tut">
           <div class="ui-icon-tut">🏠</div>
@@ -461,7 +482,7 @@ body{font-family:'Montserrat',sans-serif;background:#F4F7FB;color:#222}
     <div class="step-header-tut"><div class="step-num-tut">2</div><div><div class="step-title-tut">Klik tombol "+ Add" untuk tambah personel baru</div><div class="step-sub-tut">Tombol ada di pojok kanan atas halaman Employee Information</div></div></div>
     <div class="action-box"><div class="action-icon-tut">➕</div><div><div class="action-label">Yang harus dilakukan</div><div class="action-desc">Setelah berada di halaman <strong>Employee Information</strong>, klik tombol <strong>"+ Add"</strong> di kanan atas. Form Add Employee akan terbuka.</div><div class="action-path">Employee Information <span>›</span> + Add</div></div></div>
     <div class="ui-mockup">
-      <div class="ui-topbar"><div class="ui-topbar-logo">PeopleVerse</div><div class="ui-topbar-url">https://id.sunfishhr.com</div></div>
+      <div class="ui-topbar"><div class="ui-topbar-logo">PeopleVerse</div><div class="ui-topbar-url">https://sf7.sunfishhr.com/standard/home</div></div>
       <div class="ui-body-tut">
         <div class="ui-sidebar-tut"><div class="ui-icon-tut">🏠</div><div class="ui-icon-tut act">👤</div><div class="ui-icon-tut">🕐</div><div class="ui-icon-tut">⚙️</div></div>
         <div class="ui-content-tut">
@@ -745,7 +766,7 @@ body{font-family:'Montserrat',sans-serif;background:#F4F7FB;color:#222}
     </div>
     <div class="rule-card">
       <div class="rule-card-hd"><div class="rule-card-badge">Posisi</div><div class="rule-card-title">Position, Job Grade, Work Location</div></div>
-      <div class="rule-row"><div class="ri ri-w">W</div><div class="rule-text"><strong>Current Position:</strong> mengacu ke link tinyurl.com/SUNFISHSUPPORT-3RDPARTY</div></div>
+      <div class="rule-row"><div class="ri ri-w">W</div><div class="rule-text"><strong>Current Position:</strong> mengacu ke link https://tinyurl.com/SUNFISHSUPPORT-3RDPARTY</div></div>
       <div class="rule-row"><div class="ri ri-w">W</div><div class="rule-text"><strong>Job Grade:</strong> selalu isi <strong>2A</strong></div></div>
       <div class="rule-row"><div class="ri ri-w">W</div><div class="rule-text"><strong>Work Location:</strong> perhatikan alokasi ke HO, Depo, SMO, E-Commerce, atau DC — lihat link SUNFISHSUPPORT</div></div>
     </div>
@@ -913,6 +934,275 @@ body{font-family:'Montserrat',sans-serif;background:#F4F7FB;color:#222}
     <div class="deadline-row"><span class="deadline-pill dp-dark">Semua Pihak: H-30</span><span class="deadline-pill dp-dark">PIC: H-14</span><span class="deadline-pill dp-teal">HRBP DC: H-7</span></div>
   </div>
 </div>
+<!-- ===== LOGIN PAGE ===== -->
+<div class="page" id="page-login">
+  <div class="section-header">
+    <div class="section-badge">CARA LOGIN</div>
+    <div class="section-title">Cara Login ke PeopleVerse</div>
+    <div class="section-desc">Langkah pertama sebelum menggunakan sistem — login sesuai tipe akun</div>
+  </div>
+  <div class="breadcrumb">Beranda &rsaquo; <span>Cara Login PeopleVerse</span></div>
+
+  <div class="highlight-box" style="background:#E8F4FE;border-color:#90CAF9">
+    <div class="hb-title">&#127758; Akses PeopleVerse</div>
+    <div class="hb-body">Buka browser <strong>Chrome, Mozilla, atau Edge</strong>, lalu masuk melalui link berikut:<br>
+      <div style="margin-top:8px;background:#fff;border:1.5px solid var(--pv-teal);border-radius:8px;padding:10px 16px">
+        <a href="https://id.sunfishhr.com/" target="_blank" style="font-size:14px;font-weight:700;color:var(--pv-blue)">https://id.sunfishhr.com/</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-bar" style="margin-top:20px">
+    <button class="tab-btn active" onclick="switchTab(this,'login-pic')">&#128100; PIC 3rd Party</button>
+    <button class="tab-btn" onclick="switchTab(this,'login-hrbp')">&#127970; HRBP DC / Admin HR (SSO)</button>
+  </div>
+
+  <!-- ---- PIC Tab ---- -->
+  <div id="login-pic" class="tab-panel active">
+    <div class="highlight-box warn-box">
+      <div class="hb-title">&#128100; Login PIC 3rd Party — User ID &amp; Password</div>
+      <div class="hb-body">PIC 3rd Party login menggunakan <strong>User ID dan Password</strong> yang sudah diinfokan secara terpisah oleh tim HR. Gunakan tombol <strong>Login</strong> (bukan login_SSO).</div>
+    </div>
+
+    <!-- Mockup login screen PIC -->
+    <div style="background:linear-gradient(135deg,#68CBC7 0%,#1A3A6B 100%);border-radius:14px;padding:28px;margin:16px 0;display:flex;justify-content:center;align-items:center">
+      <div style="background:rgba(255,255,255,0.96);border-radius:12px;padding:28px 32px;width:280px;box-shadow:0 8px 32px rgba(0,0,0,0.18)">
+        <div style="text-align:center;margin-bottom:18px">
+          <div style="font-size:26px">&#128309;</div>
+          <div style="font-size:9px;color:#888;margin-top:3px">Unified People Experience Hub</div>
+          <div style="font-size:18px;font-weight:800;color:#1A3A6B;margin-top:6px">Sign In</div>
+        </div>
+        <div style="position:relative;margin-bottom:8px">
+          <div style="border:2px solid #68CBC7;border-radius:6px;padding:8px 12px;font-size:10px;color:#1A3A6B;font-weight:600;background:#EFF9FF">User ID (dari tim HR)</div>
+        </div>
+        <div style="margin-bottom:12px">
+          <div style="border:1.5px solid #ccc;border-radius:6px;padding:8px 12px;font-size:10px;color:#999">Password</div>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:8.5px;margin-bottom:10px">
+          <div style="color:#888">PeopleVerse</div>
+          <div style="color:#68CBC7">Change account</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:6px;margin-bottom:12px">
+          <div style="width:12px;height:12px;border-radius:3px;background:#1A3A6B;display:flex;align-items:center;justify-content:center;font-size:8px;color:#fff">&#10003;</div>
+          <div style="font-size:8.5px">Remember Me</div>
+          <div style="margin-left:auto;font-size:8.5px;color:#68CBC7">Forgot password</div>
+        </div>
+        <div style="background:#FFF9E6;border:1px solid #F5C842;border-radius:5px;padding:5px 8px;margin-bottom:10px;font-size:8px;color:#7B4F00;text-align:center">
+          &#128070; Klik Login dengan User ID dari HR
+        </div>
+        <div style="display:flex;gap:8px">
+          <div style="flex:1;background:#1A3A6B;color:#fff;border-radius:6px;padding:9px;text-align:center;font-size:11px;font-weight:700;box-shadow:0 2px 8px rgba(26,58,107,.3)">Login</div>
+          <div style="font-size:9px;color:#888;display:flex;align-items:center;padding:0 4px">Or</div>
+          <div style="flex:1;background:#f0f4f8;color:#888;border-radius:6px;padding:9px;text-align:center;font-size:9px">login_SSO</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flow-title">Langkah Login — PIC 3rd Party</div>
+    <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:8px">
+      <div style="display:flex;gap:12px;align-items:flex-start">
+        <div style="width:28px;height:28px;border-radius:50%;background:var(--pv-blue);color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0">1</div>
+        <div><div style="font-size:12px;font-weight:700;color:var(--pv-blue)">Buka browser & akses link PeopleVerse</div><div style="font-size:11px;color:#555;margin-top:3px;line-height:1.6">Ketik <strong style="color:var(--pv-teal)">https://id.sunfishhr.com/</strong> di address bar lalu Enter</div></div>
+      </div>
+      <div style="display:flex;gap:12px;align-items:flex-start">
+        <div style="width:28px;height:28px;border-radius:50%;background:var(--pv-blue);color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0">2</div>
+        <div><div style="font-size:12px;font-weight:700;color:var(--pv-blue)">Isi User ID</div><div style="font-size:11px;color:#555;margin-top:3px;line-height:1.6">Masukkan <strong>User ID yang telah diinfokan secara terpisah oleh tim HR</strong> ke kolom User ID</div></div>
+      </div>
+      <div style="display:flex;gap:12px;align-items:flex-start">
+        <div style="width:28px;height:28px;border-radius:50%;background:var(--pv-blue);color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0">3</div>
+        <div><div style="font-size:12px;font-weight:700;color:var(--pv-blue)">Isi Password</div><div style="font-size:11px;color:#555;margin-top:3px;line-height:1.6">Masukkan password yang diberikan. Jika lupa, klik <strong>Forgot Password</strong></div></div>
+      </div>
+      <div style="display:flex;gap:12px;align-items:flex-start">
+        <div style="width:28px;height:28px;border-radius:50%;background:var(--pv-teal);color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0">4</div>
+        <div><div style="font-size:12px;font-weight:700;color:var(--pv-blue)">Klik tombol Login</div><div style="font-size:11px;color:#555;margin-top:3px;line-height:1.6">Klik tombol <strong>Login</strong> (biru, bukan login_SSO) untuk masuk ke sistem</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ---- HRBP / Admin Tab ---- -->
+  <div id="login-hrbp" class="tab-panel">
+    <div class="highlight-box" style="background:#E8F4FE;border-color:#90CAF9">
+      <div class="hb-title">&#127970; Login HRBP DC &amp; Admin HR — SSO (Single Sign-On)</div>
+      <div class="hb-body">HRBP DC dan Admin HR login menggunakan <strong>SSO dengan email corporate Paragon</strong> — tidak perlu mengisi User ID dan Password terpisah. Klik tombol <strong>login_SSO</strong>.</div>
+    </div>
+
+    <!-- Mockup login screen SSO -->
+    <div style="background:linear-gradient(135deg,#68CBC7 0%,#1A3A6B 100%);border-radius:14px;padding:28px;margin:16px 0;display:flex;justify-content:center;align-items:center">
+      <div style="background:rgba(255,255,255,0.96);border-radius:12px;padding:28px 32px;width:280px;box-shadow:0 8px 32px rgba(0,0,0,0.18)">
+        <div style="text-align:center;margin-bottom:18px">
+          <div style="font-size:26px">&#128309;</div>
+          <div style="font-size:9px;color:#888;margin-top:3px">Unified People Experience Hub</div>
+          <div style="font-size:18px;font-weight:800;color:#1A3A6B;margin-top:6px">Sign In</div>
+        </div>
+        <div style="border:1.5px solid #ccc;border-radius:6px;padding:8px 12px;font-size:10px;color:#bbb;margin-bottom:8px">User ID</div>
+        <div style="border:1.5px solid #ccc;border-radius:6px;padding:8px 12px;font-size:10px;color:#bbb;margin-bottom:12px">Password</div>
+        <div style="display:flex;justify-content:space-between;font-size:8.5px;margin-bottom:12px">
+          <div style="color:#888">PeopleVerse</div>
+          <div style="color:#68CBC7">Change account</div>
+        </div>
+        <div style="background:#EFF9FF;border:1px solid #68CBC7;border-radius:5px;padding:5px 8px;margin-bottom:10px;font-size:8px;color:#1A3A6B;text-align:center;font-weight:600">
+          &#128070; Klik login_SSO — gunakan email corporate Paragon
+        </div>
+        <div style="display:flex;gap:8px">
+          <div style="flex:1;background:#f0f4f8;color:#888;border-radius:6px;padding:9px;text-align:center;font-size:11px">Login</div>
+          <div style="font-size:9px;color:#888;display:flex;align-items:center;padding:0 4px">Or</div>
+          <div style="flex:1;background:#1A3A6B;color:#fff;border-radius:6px;padding:9px;text-align:center;font-size:9px;font-weight:700;box-shadow:0 2px 8px rgba(26,58,107,.3)">login_SSO &#x2190;</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flow-title">Langkah Login — HRBP DC &amp; Admin HR</div>
+    <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:8px">
+      <div style="display:flex;gap:12px;align-items:flex-start">
+        <div style="width:28px;height:28px;border-radius:50%;background:var(--pv-blue);color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0">1</div>
+        <div><div style="font-size:12px;font-weight:700;color:var(--pv-blue)">Buka browser &amp; akses link PeopleVerse</div><div style="font-size:11px;color:#555;margin-top:3px;line-height:1.6">Ketik <strong style="color:var(--pv-teal)">https://id.sunfishhr.com/</strong> di address bar lalu Enter</div></div>
+      </div>
+      <div style="display:flex;gap:12px;align-items:flex-start">
+        <div style="width:28px;height:28px;border-radius:50%;background:var(--pv-blue);color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0">2</div>
+        <div><div style="font-size:12px;font-weight:700;color:var(--pv-blue)">Klik tombol login_SSO</div><div style="font-size:11px;color:#555;margin-top:3px;line-height:1.6">Di halaman Sign In, klik tombol <strong>login_SSO</strong> di bagian bawah (bukan mengisi User ID dan Password)</div></div>
+      </div>
+      <div style="display:flex;gap:12px;align-items:flex-start">
+        <div style="width:28px;height:28px;border-radius:50%;background:var(--pv-blue);color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0">3</div>
+        <div><div style="font-size:12px;font-weight:700;color:var(--pv-blue)">Login dengan email corporate Paragon</div><div style="font-size:11px;color:#555;margin-top:3px;line-height:1.6">Sistem mengarahkan ke halaman Microsoft — masukkan <strong>email corporate Paragon</strong> dan password Microsoft</div></div>
+      </div>
+      <div style="display:flex;gap:12px;align-items:flex-start">
+        <div style="width:28px;height:28px;border-radius:50%;background:var(--pv-teal);color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0">4</div>
+        <div><div style="font-size:12px;font-weight:700;color:var(--pv-blue)">Otomatis masuk ke PeopleVerse</div><div style="font-size:11px;color:#555;margin-top:3px;line-height:1.6">Setelah verifikasi Microsoft berhasil, kamu akan langsung masuk ke sistem PeopleVerse</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="highlight-box warn-box" style="margin-top:20px">
+    <div class="hb-title">&#9888;&#65039; Masalah Login?</div>
+    <div class="hb-body">Jika mengalami kendala saat login, hubungi tim <strong>HRS HO</strong> atau koordinasi dengan <strong>HRBP DC area</strong> masing-masing. Jangan berbagi User ID dan Password dengan pihak lain.</div>
+  </div>
+</div>
+
+<!-- ===== MAIN PAGE ===== -->
+<div class="page" id="page-mainpage">
+  <div class="section-header"><div class="section-badge">PANDUAN SISTEM</div><div class="section-title">Main Page PeopleVerse</div><div class="section-desc">Tampilan awal setelah berhasil login</div></div>
+  <div class="breadcrumb">Beranda &rsaquo; <span>Main Page</span></div>
+  <div class="highlight-box"><div class="hb-title">&#128187; Tentang Main Page</div><div class="hb-body">Tampilan awal ketika login ke PeopleVerse. Berisi info nama dan posisi, attendance hari ini (jam masuk dan jam pulang), saldo cuti dan reimbursement. Tab <strong>Reminder</strong> menampilkan reminder kontrak employee yang akan habis. Tab <strong>Notification</strong> menampilkan notifikasi pengajuan masuk sebagai approver.</div></div>
+  <table class="info-table">
+    <thead><tr><th>Area</th><th>Informasi</th><th>Aksi</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Profile Kiri</strong></td><td>Nama, jabatan, jam masuk/keluar hari ini</td><td>Lihat status kehadiran</td></tr>
+      <tr><td><strong>My Balance</strong></td><td>Sisa cuti dan reimbursement</td><td>Pantau saldo personal</td></tr>
+      <tr><td><strong>Tab Reminder</strong></td><td>Reminder kontrak employee yang akan habis</td><td>Klik See Detail untuk lihat daftar</td></tr>
+      <tr><td><strong>Tab Notification</strong></td><td>Notifikasi pengajuan masuk (add employee, cuti, lembur)</td><td>Review dan approve dari sini</td></tr>
+      <tr><td><strong>My Weekly Calendar</strong></td><td>Jadwal minggu ini</td><td>Klik View Monthly untuk tampilan bulanan</td></tr>
+    </tbody>
+  </table>
+  <div class="highlight-box" style="background:#E8F4FE;border-color:#90CAF9;margin-top:8px">
+    <div class="hb-title">&#128203; Akses Menu untuk PIC 3rd Party dan HRBP DC</div>
+    <div class="hb-body">
+      <strong>Tersedia:</strong> Employee Information (New Hire Request), Custom Field Upload, User Defined Reports, Career Administration (Career Transition), Time dan Attendance (My Calendar, Attendance List, ESS Report)<br><br>
+      <strong>Tidak ada akses / tidak dipakai:</strong> Employee Survey, Onboarding, Employee Letter, Work Accident, Employee Reports, Employee Directory, Offboarding, Career Admin Reports
+    </div>
+  </div>
+</div>
+
+<!-- ===== TUTORIAL CAREER TRANSITION ===== -->
+<div class="page" id="page-tut-contract">
+  <div class="section-header"><div class="section-badge">TUTORIAL — PIC 3RD PARTY &amp; HRBP DC</div><div class="section-title">Career Transition</div><div class="section-desc">Career Administration &#8250; Career Transition &#8250; Add &#8250; Send To Approver</div></div>
+  <div class="breadcrumb">Career Transition &#8250; <span>Tutorial Career Transition</span></div>
+  <div class="highlight-box"><div class="hb-title">&#128204; Fungsi Menu Ini</div><div class="hb-body">Digunakan untuk semua jenis perubahan career: perpanjangan kontrak, rotasi, perubahan posisi, hingga offboarding. Tampilan kiri = data sebelum (read only). Tampilan kanan = data sesudah yang diisi.</div></div>
+  <table class="info-table" style="margin-bottom:20px">
+    <thead><tr><th>Tujuan</th><th>Career Transition</th><th>Career Transition Type</th></tr></thead>
+    <tbody>
+      <tr><td>Perpanjangan kontrak</td><td>Movement</td><td>Employment Status Change</td></tr>
+      <tr><td>Rotasi / pindah area</td><td>Movement</td><td>Rotation</td></tr>
+      <tr><td>Ubah posisi</td><td>Movement</td><td>Perubahan Position</td></tr>
+      <tr><td>Resign</td><td>Termination</td><td>Resignation / Discontinue</td></tr>
+      <tr><td>End of Contract</td><td>Termination</td><td>Involuntary – End of Contract</td></tr>
+      <tr><td>End of Contract Min 4 Tahun</td><td>Termination</td><td>Involuntary – End of Contract Min. 4 Years</td></tr>
+      <tr><td>Meninggal Dunia</td><td>Termination</td><td>Deceased</td></tr>
+      <tr><td>Pensiun</td><td>Termination</td><td>Pension</td></tr>
+    </tbody>
+  </table>
+  <div class="flow-title">Langkah-langkah</div>
+  <div class="card card-teal" style="margin-bottom:10px"><div class="card-title">Langkah 1–2: Buka Career Administration &#8250; Career Transition</div><div class="card-body">Klik ikon Career Administration di sidebar kiri &#8250; pilih Career Transition dari menu.</div></div>
+  <div class="card card-teal" style="margin-bottom:10px"><div class="card-title">Langkah 3: Klik + Add</div><div class="card-body">Klik tombol <strong>+ Add</strong> di pojok kanan atas halaman Career Transition Request.</div></div>
+  <div class="card card-teal" style="margin-bottom:10px"><div class="card-title">Langkah 4: Isi General Information</div><div class="card-body"><strong>Request For:</strong> pilih nama employee. <strong>Career Transition:</strong> pilih jenis. <strong>Career Transition Type:</strong> pilih tipe sesuai tabel. Untuk Termination: lampirkan dokumen di tab Attachment sebelum submit.</div></div>
+  <div class="card card-teal" style="margin-bottom:10px"><div class="card-title">Langkah 5: Isi Data Sesudah (After This Transaction)</div><div class="card-body">Isi bagian kanan: <strong>Effective Date</strong> sesuai cut-off date per 3rd party (Tgl 1 atau Tgl 16). Untuk Termination: End Date otomatis terisi — wajib dicek, tanggal 15 atau 30/31 tanpa ditambah 1 hari.</div></div>
+  <div class="card card-teal"><div class="card-title">Langkah 6: Klik Send To Approver</div><div class="card-body">Klik <strong>Send To Approver</strong> (bukan Draft) untuk mengirim ke HRBP DC / HRS HO untuk disetujui.</div></div>
+
+  <div class="flow-title" style="margin-top:24px">Effective Date per 3rd Party</div>
+  <table class="info-table">
+    <thead><tr><th>3rd Party</th><th>Payroll Cycle</th><th>Employment Status Change</th><th>Resign / Offboarding</th></tr></thead>
+    <tbody>
+      <tr><td>Absolut Servis Nusantara</td><td>1 – 30/31</td><td><span class="badge badge-blue">Tgl 1</span></td><td><span class="badge badge-orange">As requested</span></td></tr>
+      <tr><td>Absolute Services</td><td>1 – 30/31</td><td><span class="badge badge-blue">Tgl 1</span></td><td><span class="badge badge-orange">As requested</span></td></tr>
+      <tr><td>ISS</td><td>1 – 30/31</td><td><span class="badge badge-blue">Tgl 1</span></td><td><span class="badge badge-orange">As requested</span></td></tr>
+      <tr><td>Calroweila</td><td>16 – 15</td><td><span class="badge badge-teal">Tgl 16</span></td><td><span class="badge badge-orange">As requested</span></td></tr>
+      <tr><td>Elabram</td><td>16 – 15</td><td><span class="badge badge-teal">Tgl 16</span></td><td><span class="badge badge-orange">As requested</span></td></tr>
+      <tr><td>TCID</td><td>16 – 15</td><td><span class="badge badge-teal">Tgl 16</span></td><td><span class="badge badge-orange">As requested</span></td></tr>
+      <tr><td>KAN</td><td>16 – 15</td><td><span class="badge badge-teal">Tgl 16</span></td><td><span class="badge badge-orange">As requested</span></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ===== CAREER ADMIN MENU ===== -->
+<div class="page" id="page-menu-career">
+  <div class="section-header"><div class="section-badge">MENU PANDUAN</div><div class="section-title">Career Administration Menu</div><div class="section-desc">Akses untuk PIC 3rd Party dan HRBP DC</div></div>
+  <div class="breadcrumb">Menu Lainnya &#8250; <span>Career Administration</span></div>
+  <div class="highlight-box" style="background:#E8F4FE;border-color:#90CAF9"><div class="hb-title">Catatan Akses</div><div class="hb-body">Sub-menu Offboarding dan Career Administration Reports tidak tersedia. Offboarding dilakukan melalui Career Transition &#8250; Termination.</div></div>
+  <table class="info-table">
+    <thead><tr><th>Sub-menu</th><th>Fungsi</th><th>Akses PIC 3rd Party dan HRBP DC</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Disciplines</strong></td><td>Lihat dan tambah data disiplin</td><td><span class="badge badge-teal">Tersedia</span></td></tr>
+      <tr><td><strong>Career Transition</strong></td><td>Input perpanjangan kontrak, rotasi, offboarding</td><td><span class="badge badge-teal">Tersedia</span></td></tr>
+      <tr><td>Offboarding</td><td>–</td><td><span class="badge badge-orange">Tidak ada akses</span></td></tr>
+      <tr><td>Career Admin Reports</td><td>–</td><td><span class="badge badge-orange">Tidak ada akses</span></td></tr>
+    </tbody>
+  </table>
+  <button class="btn-primary" style="margin-top:12px" onclick="showPage('tut-contract',null)">Tutorial Career Transition</button>
+</div>
+
+<!-- ===== TIME AND ATTENDANCE MENU ===== -->
+<div class="page" id="page-menu-attendance">
+  <div class="section-header"><div class="section-badge">MENU PANDUAN</div><div class="section-title">Time &amp; Attendance Menu</div><div class="section-desc">My Calendar, Attendance List, Attendance Request, ESS Report</div></div>
+  <div class="breadcrumb">Menu Lainnya &#8250; <span>Time &amp; Attendance</span></div>
+  <div class="highlight-box" style="background:#E8F4FE;border-color:#90CAF9"><div class="hb-title">Catatan</div><div class="hb-body">Sub-menu Attendance Data Change Request, Leave Request, dan Overtime Request adalah panduan sebagai employee individual. PIC 3rd Party tidak perlu melakukan ini atas nama personel lain.</div></div>
+  <table class="info-table">
+    <thead><tr><th>Sub-menu</th><th>Fungsi</th><th>Catatan</th></tr></thead>
+    <tbody>
+      <tr><td><strong>My Calendar</strong></td><td>Lihat attendance diri sendiri dalam 1 bulan, shift per hari</td><td>Semua user</td></tr>
+      <tr><td><strong>Attendance List</strong></td><td>Lihat attendance employee, search per nama dan rentang tanggal</td><td>PIC &amp; HRBP DC</td></tr>
+      <tr><td><strong>Attendance Administration</strong></td><td>Shift Schedule dan Employee Attendance Location</td><td>PIC &amp; HRBP DC</td></tr>
+      <tr><td>Attendance Data Change Request</td><td>Koreksi kehadiran: pilih tanggal, klik edit, isi jam, isi alasan, Send To Approver</td><td>Guide as employee</td></tr>
+      <tr><td>Leave Request</td><td>Pengajuan cuti: klik Add, pilih tipe cuti, tanggal, keterangan, Send To Approver</td><td>Guide as employee</td></tr>
+      <tr><td>Overtime Request</td><td>Pengajuan lembur: isi keterangan, tanggal, jam mulai dan selesai, Send To Approver</td><td>Guide as employee</td></tr>
+      <tr><td>On Duty Request</td><td>Belum dipakai</td><td><span class="badge badge-orange">Tidak perlu ditampilkan</span></td></tr>
+      <tr><td><strong>Time &amp; Attendance ESS Report</strong></td><td>Tarik report attendance, leave, overtime. Klik View Report, filter tanggal dan employee</td><td>PIC &amp; HRBP DC</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ===== REPORTS MENU ===== -->
+<div class="page" id="page-menu-reports">
+  <div class="section-header"><div class="section-badge">MENU PANDUAN</div><div class="section-title">Reports &amp; Custom Field Upload</div><div class="section-desc">User Defined Reports dan Custom Field Upload</div></div>
+  <div class="breadcrumb">Menu Lainnya &#8250; <span>Reports</span></div>
+  <div class="grid-2">
+    <div class="card card-teal"><div class="card-title">User Defined Reports</div><div class="card-body">Download data employee. Klik <strong>Add New Report</strong>, pilih fields yang diinginkan. Default: Employee Name, Employee ID, Employee Status, Job Status. Klik <strong>Preview Report</strong>.</div></div>
+    <div class="card card-teal"><div class="card-title">Custom Field Upload</div><div class="card-body">Pengisian Custom Field secara bulk via Excel. <strong>Download Template</strong>, isi data, pilih Upload Type, klik <strong>Upload</strong>.</div></div>
+  </div>
+  <table class="info-table" style="margin-top:8px">
+    <thead><tr><th>Menu</th><th>Akses</th><th>Catatan</th></tr></thead>
+    <tbody>
+      <tr><td><strong>User Defined Reports</strong></td><td><span class="badge badge-teal">PIC 3rd Party &amp; HRBP DC</span></td><td>Add New Report, pilih fields, Preview Report</td></tr>
+      <tr><td><strong>Custom Field Upload</strong></td><td><span class="badge badge-teal">PIC 3rd Party &amp; HRBP DC</span></td><td>Download template, isi, upload</td></tr>
+      <tr><td>Employee Reports</td><td><span class="badge badge-orange">Tidak ada akses</span></td><td>–</td></tr>
+      <tr><td>Employee Directory</td><td><span class="badge badge-orange">Tidak ada akses</span></td><td>–</td></tr>
+      <tr><td>Employee Survey</td><td><span class="badge badge-orange">Tidak dipakai</span></td><td>–</td></tr>
+      <tr><td>Onboarding</td><td><span class="badge badge-orange">Tidak ada akses</span></td><td>–</td></tr>
+      <tr><td>Employee Letter</td><td><span class="badge badge-orange">Tidak ada akses</span></td><td>–</td></tr>
+      <tr><td>Work Accident</td><td><span class="badge badge-orange">Tidak dipakai</span></td><td>–</td></tr>
+    </tbody>
+  </table>
+</div>
+
+
 
 </main>
 </div>
@@ -926,6 +1216,16 @@ function showPage(key,el){
   var pg=document.getElementById('page-'+key);
   if(pg){pg.classList.add('active');window.scrollTo(0,0)}
   if(el)el.classList.add('active');
+}
+
+function ctab(btn,id){
+  var bar=btn.closest('.tab-bar');
+  bar.querySelectorAll('.tab-btn').forEach(function(b){b.classList.remove('active')});
+  btn.classList.add('active');
+  var page=btn.closest('.page');
+  page.querySelectorAll('.tab-panel').forEach(function(p){p.classList.remove('active')});
+  var t=document.getElementById(id);
+  if(t)t.classList.add('active');
 }
 
 function switchTab(btn,targetId){
